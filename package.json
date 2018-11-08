@@ -1,0 +1,44 @@
+{
+  "name": "indicateurs-run-dashbling",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development dashbling start",
+    "build": "dashbling compile",
+    "lint": "eslint --ext .jsx,.js .",
+    "fix": "eslint --fix --ext .jsx,.js ."
+  },
+  "browserslist": [
+    "last 2 versions",
+    "chrome >= 20"
+  ],
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.42",
+    "@babel/preset-stage-2": "^7.0.0-beta.42",
+    "@dashbling/build-support": "^0",
+    "babel-eslint": "^8.2.2",
+    "cross-env": "^5.1.4",
+    "eslint": "^4.19.1",
+    "eslint-plugin-react": "^7.7.0"
+  },
+  "dependencies": {
+    "@dashbling/client": "^0",
+    "@dashbling/core": "^0",
+    "chart.js": "^2.7.2",
+    "chartjs-plugin-datalabels": "^0.3.0",
+    "dashbling-widget-weather": "^1.0.0",
+    "es6-map": "^0.1.5",
+    "google-palette": "^1.1.0",
+    "install": "^0.11.0",
+    "moment": "^2.21.0",
+    "prop-types": "^15.6.1",
+    "query-string": "^6.0.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-vis": "^1.9.2",
+    "tinycolor2": "^1.4.1",
+    "https-proxy-agent": "2.2.1",
+    "node-fetch": "2.2.1"
+  }
+}
