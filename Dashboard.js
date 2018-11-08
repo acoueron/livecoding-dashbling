@@ -7,6 +7,9 @@ import dashboardLayout from './styles/customDashboardLayout.scss';
 // RoundWidget + time event = ClockWidget
 const ClockWidget = connect("time")(RoundWidget);
 
+// RoundWidget + change event = BitcoinWidget
+const BitcoinWidget = connect("change")(RoundWidget);
+
 export default class Dashboard extends React.Component {
 
   render() {
@@ -14,6 +17,7 @@ export default class Dashboard extends React.Component {
       <Fragment>
         <DashblingDashboard layout={dashboardLayout}> 
           <ClockWidget title="What time is it ?" />
+          <BitcoinWidget title="How much is Bitcoin ?"/>
         </DashblingDashboard>
       </Fragment>
     );
